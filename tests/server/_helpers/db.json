@@ -1,0 +1,7 @@
+{
+  "db": {
+    "test": {
+      "url": "mongodb://localhost/life-of-brian_test"
+    }
+  }
+}
