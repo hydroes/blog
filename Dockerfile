@@ -5,12 +5,9 @@ MAINTAINER hydroes
 WORKDIR /home/mean
 
 # Install Mean.JS packages
-ADD package.json /home/mean/package.json
+ADD . /home/mean/
+WORKDIR /home/mean/server
 RUN npm install
-
-
-# Make everything available for start
-ADD . /home/mean
 
 # currently only works for development
 ENV NODE_ENV development
