@@ -1,11 +1,11 @@
 {
-  "name": "blog",
-  "version": "1.0.0",
+  "name": "life-of-brian",
+  "version": "0.0.1",
   "description": "My personal blog",
   "author": "hydroes",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "^4.13.3"
