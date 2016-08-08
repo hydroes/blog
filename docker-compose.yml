@@ -1,3 +1,6 @@
+# inspired from https://blog.giantswarm.io/getting-started-with-docker-and-meanjs/
+# would be nice: http://anandmanisankar.com/posts/docker-container-nginx-node-redis-example/
+
 web:
   build: .
   links:
