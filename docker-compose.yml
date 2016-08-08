@@ -9,6 +9,9 @@ web:
    - ./app:/home/mean/app
   environment:
    NODE_ENV: development
+   PORT: 3000
+   DB_CONNECTION_NAME: 'db'
+   DB_COLLECTION_NAME: 'blog'
 db:
   image: mongo:latest
   ports:
