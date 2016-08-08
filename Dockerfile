@@ -2,15 +2,15 @@ FROM nodesource/node:6.3
 
 MAINTAINER hydroes
 
-WORKDIR /home/app
+WORKDIR /home/mean
 
-# Install packages
-ADD package.json /home/app/package.json
+# Install Mean.JS packages
+ADD package.json /home/mean/package.json
 RUN npm install
 
 
 # Make everything available for start
-ADD . /home/app
+ADD . /home/mean
 
 # currently only works for development
 ENV NODE_ENV development
