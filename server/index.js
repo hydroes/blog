@@ -2,6 +2,7 @@
 
 const express = require('express');
 const mongoose = require('mongoose');
+const conf = require('config');
 
 // Constants
 const PORT = process.env.PORT;
@@ -21,3 +22,4 @@ app.get('/', function (req, res) {
 
 app.listen(PORT);
 console.log('Running on http://localhost:' + PORT);
+
