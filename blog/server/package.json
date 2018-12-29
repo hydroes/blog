@@ -1,0 +1,15 @@
+{
+  "name": "life-of-brian",
+  "version": "0.0.1",
+  "description": "My personal blog",
+  "author": "hydroes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "config": "^1.21.0",
+    "express": "^4.13.3",
+    "mongoose": "^4.5.8"
+  }
+}
