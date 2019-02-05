@@ -5,13 +5,13 @@ const Layout = props => (
     <div className="header-container">
       <style>{`
       div.header-container {
-        padding: 5% 0 3% 0;
-        background-color: black;
+        padding: 5% 0 1% 0;
+        background-color: #000000;
       }
     `}</style>
       <Header />
     </div>
-    <div>{props.children}</div>
+    {props.children}
   </>
 );
 
