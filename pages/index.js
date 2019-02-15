@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
+import AboutMe from "../components/AboutMe";
 
 export default () => (
   <Layout>
@@ -18,37 +19,9 @@ export default () => (
       lacinia nisl at, malesuada mauris.
     </p>
 
-    <div className="pure-g">
-      <div className="pure-u-1 pure-u-sm-1-2 about-left body-pad">
-        <h2>about me</h2>
-      </div>
-      <div className="pure-u-1 pure-u-sm-1-2 about-right body-pad">
-        <h2>Profile pic</h2>
-      </div>
-    </div>
-
-    {/* <div className="about-container">
-      <div className="about left body-pad">
-        <h2>about me</h2>
-      </div>
-      <div className="about right body-pad">2222222</div>
-    </div> */}
+    <AboutMe />
 
     <style jsx>{`
-      .body-pad {
-        padding: 0 10%;
-      }
-      .about-container {
-      }
-      .about.left {
-        background-color: rgba(1, 1, 1, 1);
-      }
-      .about.left > h2 {
-        color: white;
-      }
-      .about.right {
-        background-color: #dfb201;
-      }
       h2 {
         font-family: "Montserrat", sans-serif;
         font-size: 42px;
