@@ -28,6 +28,12 @@ export default class MyDocument extends Document {
             body {
               font-family: "Montserrat", sans-serif;
             }
+            .body-pad {
+              padding: 0 10%;
+            }
+            * {
+              box-sizing: border-box;
+            }
           `}</style>
         </Head>
         <body className="custom_class">
