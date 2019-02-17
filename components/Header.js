@@ -9,7 +9,7 @@ const Header = () => (
         </h1>
       </Link>
       <p>
-        A <span>fullstack</span> web developer based in London UK.
+        A <span>fullstack</span> web developer based in <span>London</span>.
       </p>
 
       <style jsx>{`
