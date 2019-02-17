@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
+import Slug from "../components/Slug";
 import AboutMe from "../components/AboutMe";
 
 export default () => (
@@ -13,32 +14,22 @@ export default () => (
         </div>
       </Link>
     </div>
-    <h2 className="body-pad">portfolio.</h2>
-    <p className="body-pad">
-      Please check some of mine recent projects below. Cras ut nisl consectetur,
-      lacinia nisl at, malesuada mauris.
-    </p>
+
+    <Slug
+      title="Portfolio"
+      description="Please check some of mine recent projects below. Cras ut nisl consectetur,
+      lacinia nisl at, malesuada mauris."
+    />
 
     <AboutMe />
 
+    <Slug
+      title="Smortsholio"
+      description="Please check some of mine recent projects below. Cras ut nisl consectetur,
+      lacinia nisl at, malesuada mauris."
+    />
+
     <style jsx>{`
-      h2 {
-        font-family: "Montserrat", sans-serif;
-        font-size: 42px;
-        font-weight: 700;
-        color: rgba(1, 1, 1, 1);
-        letter-spacing: 2px;
-        text-transform: lowercase;
-      }
-      p {
-        width: 30%;
-        margin: 0px 0px;
-        font-family: "Montserrat", sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 28px;
-        color: rgba(71, 71, 71, 0.9);
-      }
       .find-out-more-container {
         background-color: black;
         padding-bottom: 3%;
