@@ -1,45 +1,46 @@
+import styled from "styled-components";
+
+const AboutFlexContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  background-color: black;
+`;
+
+const AboutFlexDiv = styled.div`
+  width: 40%;
+  /* color: rgba(154, 154, 154, 1); */
+
+  background-color: ${props => props.backColor || ""};
+  color: ${props => props.foreColor || ""};
+`;
+
+const Title = styled.h2`
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+`;
+
+const Paragraph = styled.p`
+  color: rgba(154, 154, 154, 1);
+`;
+
 const AboutMe = () => (
-  <div className="flex-container black">
-    <div className="black about">
-      <h2>about me</h2>
+  <AboutFlexContainer>
+    <AboutFlexDiv backColor="rgba(1, 1, 1, 1)" foreColor="#ffffff">
+      <Title>about me</Title>
       <h3>sent at laoreet libero, molestie euismod enim. Suspend</h3>
-      <p>
+      <Paragraph>
         Praesent at laoreet libero, molestie euismod enim. Suspendisse pulvinar,
         erat vel tincidunt rutrum, leo nibh ornare orci, nec pulvinar sem diam
         at sem.
-      </p>
-    </div>
-    <div className="yellow">
+      </Paragraph>
+    </AboutFlexDiv>
+    {/* @todo: remove the style */}
+    <AboutFlexDiv backColor="#e9bc03" style={{ "text-align": "center" }}>
       <img src="https://via.placeholder.com/470x300.png" />
-    </div>
-
-    <style jsx>{`
-      .flex-container {
-        display: flex;
-        justify-content: center;
-      }
-
-      .flex-container > div {
-        width: 40%;
-      }
-      .black {
-        background-color: rgba(1, 1, 1, 1);
-        color: #ffffff;
-      }
-      .yellow {
-        background-color: #e9bc03;
-        text-align: center;
-      }
-      .about > h2 {
-        font-size: 3em;
-        font-weight: 700;
-        letter-spacing: 2px;
-      }
-      p {
-        color: rgba(154, 154, 154, 1);
-      }
-    `}</style>
-  </div>
+    </AboutFlexDiv>
+  </AboutFlexContainer>
 );
 
 export default AboutMe;
